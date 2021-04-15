@@ -1,0 +1,12 @@
+﻿
+<h1>Наша продукция</h1>
+<!--<h3>@Model.currentCategory</h3>-->
+
+<div class="row mt-5 mb-2">
+
+    @{ foreach (Food food in Model.AllFood)
+          @Html.Partial("AllFoods", food)
+    }
+
+</div>
+

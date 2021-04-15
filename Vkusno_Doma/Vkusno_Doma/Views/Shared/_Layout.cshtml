@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <img class="img-icon" src="/img/icon.jpg">
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark"><b>Приём заказов:</b> с 9:00 - 21:00</a><br>
+                <a class="p-2 text-dark"><b>Выходной день:</b> Воскресенье</a>
+            </nav>
+
+            <img class="telefone" src="~/favicon/telefone.jpg">
+            <nav>
+                <a class="number" href="#">+999801234567 </a><br>
+                <a class="number" href="#">+999801234567</a>
+            </nav>
+            <a href=""><img class="shopping_cart" src="~/favicon/shopping_cart.png"></a>
+            
+
+            <a class="btn btn-outline-primary" href="#">Регистрация</a>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        @RenderBody()
+    </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <script src="~/js/bootstrap.min.js"></script>
+</body>
+</html>

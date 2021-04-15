@@ -1,0 +1,20 @@
+﻿@model Food
+
+<div class="food col-lg-4" style="border: 2px solid #e7e2e8;width: 300px;margin-right: 10px;margin-top: 10px;padding-left: 35px;padding-top: 35px;">
+    <img class="img-thumbnail" src="@Model.Img" alt="@Model.Name" />
+    <h3>@Model.LongDescription</h3>
+    <p>Цена: @Model.Price.ToString()</p>
+
+    <button type="button" onclick="this.nextElementSibling.stepDown()" style="border: none;background: none;">-</button>
+    <input type="number" min="0" max="100" value="1" readonly class="raz" style="
+                     border:none;
+                     background: #e7e2e8;
+                     padding: 1px;
+
+                     width: 30px;
+                     height: 30px;
+                     text-align: right;">
+    <button type="button" onclick="this.previousElementSibling.stepUp()" style="border:none; background:none;">+</button>
+
+    <a class="btn btn-warning" href="#" style=" margin-top: 22px; margin-left: 55px; margin-right: 2px;margin-bottom: 24px;">Заказать</a>
+</div>

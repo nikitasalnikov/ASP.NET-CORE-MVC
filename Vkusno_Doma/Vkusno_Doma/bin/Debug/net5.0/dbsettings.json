@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Vkusno_Doma;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
